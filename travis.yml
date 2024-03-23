@@ -1,4 +1,9 @@
 language: java
 jdk:
-  - oraclejdk8
-  - oraclejdk7
+  - openjdk11
+
+# Comando para instalar las dependencias y compilar el proyecto
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+# Comando para ejecutar las pruebas con JUnit
+script: mvn test
