@@ -1,15 +1,4 @@
 language: java
-
-# Versión de Java
 jdk:
-  - openjdk11
-
-# Comando para compilar el proyecto
-script: javac -version && javac -d build src/*.java
-
-# Comando para ejecutar las pruebas
-# Ejemplo: java -cp build org.junit.runner.JUnitCore TestSuite
-# Asegúrate de ajustar este comando según la estructura de tus pruebas
-# y la manera en que estás organizando tu código
-# antes de ejecutar Travis CI.
-# script: java -cp build org.junit.runner.JUnitCore TestSuite
+  - oraclejdk8
+  - oraclejdk7
